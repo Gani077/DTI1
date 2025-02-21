@@ -63,12 +63,25 @@ img {
   align-items: center;
 }
 
-.login__img {
+/*.login__img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 170%;
+  height: 130%;
   object-fit: cover;
   object-position: center;
+}*/
+.login__img {
+  position: fixed; /* Ensures it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0%;
+  margin: 0%;
+  padding: 0%; 
+  z-index: -1; /* Moves the image behind other elements */
 }
 
 .login__form {
