@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(244, 20%, 90%);
+    color: hsl(244, 10%, 20%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: hsl(240, 100%, 30%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: hsl(255, 88%, 44%);
+  }
+  
+  .nav-link {
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: hsl(244, 75%, 75%) !important;
+  }
+  
+  /* Search Section */
+  .search {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: hsl(244, 75%, 57%);
+    border-color: hsl(244, 75%, 57%);
+  }
+  
+  .btn-primary:hover {
+    background-color: hsl(244, 75%, 47%);
+    border-color: hsl(244, 75%, 47%);
+  }
+  
+  /* Job Listings */
+  .job-listings .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    color: hsl(244, 75%, 57%);
+  }
+  
+  .btn-success {
+    background-color: hsl(244, 75%, 57%);
+    border-color: hsl(244, 75%, 57%);
+  }
+  
+  .btn-success:hover {
+    background-color: hsl(244, 75%, 47%);
+    border-color: hsl(244, 75%, 47%);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: hsl(244, 50%, 30%);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
