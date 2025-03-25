@@ -19,8 +19,17 @@
                 integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
                 crossorigin="anonymous"
               /> 
-              <link rel="stylesheet" href="main.css" />
-              <script src="main.js"></script>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+              class="stylesheet">
+             
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+            
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+              <link rel="stylesheet" href="assets/css/main.css" />
+              <script src="assets/js/main.js"></script>
               <script type="text/javascript" src="server.js"></script>
             </head>
 
@@ -81,39 +90,6 @@
                     </div>
                   </form>
 
-                  <!-- <form action="#" method="get">
-                    <div class="form-row justify-content-center">
-                      <div class="col-md-3 mb-2">
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="title"
-                          placeholder="Role"
-                        />
-                      </div>
-                      <div class="col-md-3 mb-2">
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="location"
-                          placeholder="Location"
-                        />
-                      </div>
-                      <div class="col-md-3 mb-2">
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="company"
-                          placeholder="Company"
-                        />
-                      </div>
-                      <div class="col-md-2 mb-2">
-                        <button type="submit" class="btn btn-primary btn-block">
-                          Search
-                        </button>
-                      </div>
-                    </div>
-                  </form> -->
                 </div>
               </section>
 
@@ -154,7 +130,9 @@
                   </div>
                 </div>
               </section>
-
+              <button id="scroll-to-top" class="scroll-to-top">
+                <i class="fa fa-arrow-up"></i> <!-- Font Awesome arrow icon -->
+              </button>
               <footer class="bg-dark text-white text-center py-3">
                 <p>© 2025 HIRE HUB</p>
                 <p>A Job Search Portal</p>
@@ -176,6 +154,25 @@
                 integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk+EAqyWj2UmgpD0jFk5i0Bn5VaU5a4h1J"
                 crossorigin="anonymous"
               ></script>
+
+<!-- Chatbot Button -->
+<button id="chatbot-button" class="chatbot-button">
+  <i class="fa fa-robot"></i>
+</button>
+
+<!-- Chatbot Container -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">
+        <span>Chatbot</span>
+        <button id="close-chatbot">&times;</button> <!-- Added ID -->
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+        <input type="text" id="chatbot-input" placeholder="Type a message...">
+        <button id="send-chatbot">Send</button>
+    </div>
+</div>
+
             </body>
           </html>
         </meta<!DOCTYPE>
