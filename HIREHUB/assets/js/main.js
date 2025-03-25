@@ -36,4 +36,48 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const chatbotButton = document.getElementById("chatbot-button");
+    const chatbotContainer = document.getElementById("chatbot"); // Fixed ID
+    const closeChatbot = document.getElementById("close-chatbot"); // Fixed missing ID
+    const chatbotMessages = document.getElementById("chatbot-messages");
+    const chatbotInput = document.getElementById("chatbot-input");
+    const sendChatbot = document.getElementById("send-chatbot");
+
+    // Toggle chatbot visibility
+    chatbotButton.addEventListener("click", () => {
+        chatbotContainer.style.display = chatbotContainer.style.display === "block" ? "none" : "block";
+    });
+
+    closeChatbot.addEventListener("click", () => {
+        chatbotContainer.style.display = "none";
+    });
+
+    // Handle sending messages
+    sendChatbot.addEventListener("click", sendMessage);
+    chatbotInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            sendMessage();
+        }
+    });
+
+    function sendMessage() {
+        let userMessage = chatbotInput.value.trim();
+        if (userMessage === "") return;
+
+        // Display user message
+        let userDiv = document.createElement("div");
+        userDiv.textContent = "You: " + userMessage;
+        chatbotMessages.appendChild(userDiv);
+
+        // Simple bot response
+        let botDiv = document.createElement("div");
+        botDiv.textContent = "Bot: I'm here to assist you!";
+        setTimeout(() => chatbotMessages.appendChild(botDiv), 500);
+
+        chatbotInput.value = "";
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+});
